@@ -124,7 +124,6 @@
   display: flex;
   flex: 1;
   justify-content: center;
-
 }
 
 .user-control{
@@ -133,17 +132,21 @@
   justify-content: flex-end;
 }
 
+.user-ctrl-sear{
+  display: none;
+}
+
 /* Button User Req */
-.btn-user-req, .btn-user-chat{
+.btn-user-req, .btn-user-chat, .btn-user-noti, .btn-user-sear{
   background: transparent;
   border: none;
 }
 
-.btn-user-req:focus, .btn-user-chat:focus{
+.btn-user-req:focus, .btn-user-chat:focus, .btn-user-noti:focus, .btn-user-sear:focus{
   outline:0;
 }
 
-.btn-user-req img, .btn-user-chat img{
+.btn-user-req img, .btn-user-chat img, .btn-user-noti img, .btn-user-sear img{
   filter: brightness(0) invert(1);
   height: 45px;
   width: 45px;
@@ -181,8 +184,52 @@
 
 
 /* Reponsive css */
-@media only screen and (max-width: 600px) {
-  body {
-      background-color: lightblue;
+@media only screen and (max-width: 1007px) and (min-width: 641px) {
+  .navbar-info-title{
+    display: none;
+  }
+  .navbar-info-search{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .navbar-search-form > .search-form-textbox{
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar-info{
+    overflow-x: hidden;
+  }
+  .navbar-info-left{
+    flex: none;
+  }
+  .navbar-info-title{
+    display: none;
+  }
+  .navbar-info-search{
+    display: none;
+  }
+  .user-control{
+    justify-content: center;
+  }
+  .user-control div{
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  .user-ctrl-sear{
+    display: flex;
+  }
+  .user-inf{
+    width: 4.5em;
+    height: 4.5em;
+    background-color: lightcyan;
+    flex: none;
+  }
+  .btn-user-req img, .btn-user-chat img, .btn-user-noti img, .btn-user-sear img{
+    filter: brightness(0) invert(1);
+    height: 30px;
+    width: 30px;
+    margin-top: 0.5em;
   }
 }

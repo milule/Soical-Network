@@ -12,7 +12,7 @@ class NavBarInfo extends Component {
       <div className="navbar-info">
         <div className="navbar-info-left">
           <div className="navbar-info-symbol">
-            <a className="navbar-info-symbol-logo">
+            <a href="" className="navbar-info-symbol-logo">
 
             </a>
           </div>
@@ -41,8 +41,13 @@ class NavBarInfo extends Component {
               </button>
             </div>
             <div className="user-ctrl-req">
-              <button type="button" className="btn-user-req">
+              <button type="button" className="btn-user-noti">
                 <img src={notiIco} alt="" />
+              </button>
+            </div>
+            <div className="user-ctrl-sear">
+              <button type="button" className="btn-user-sear">
+                <img src={searchIco} alt="" />
               </button>
             </div>
           </div>
