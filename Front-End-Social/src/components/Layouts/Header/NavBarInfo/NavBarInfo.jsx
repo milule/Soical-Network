@@ -33,16 +33,19 @@ class NavBarInfo extends Component {
             <div className="user-ctrl-req">
               <button type="button" className="btn-user-req">
                 <img src={userReqIco} alt="" />
+                <div class="btn-user-label btn-user-label-bg1">6</div>
               </button>
             </div>
             <div className="user-ctrl-chat">
               <button type="button" className="btn-user-chat">
                 <img src={chatIco} alt="" />
+                <div class="btn-user-label btn-user-label-bg2">6</div>
               </button>
             </div>
             <div className="user-ctrl-req">
               <button type="button" className="btn-user-noti">
                 <img src={notiIco} alt="" />
+                <div class="btn-user-label btn-user-label-bg3">6</div>
               </button>
             </div>
             <div className="user-ctrl-sear">

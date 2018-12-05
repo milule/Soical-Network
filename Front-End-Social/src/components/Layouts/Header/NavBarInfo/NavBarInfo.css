@@ -1,13 +1,13 @@
-.navbar-info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 4.5em;
-    background-color: rgba(22, 30, 54, 0.747)
+.navbar-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 4.5em;
+  background-color: rgba(22, 30, 54, 0.747);
 }
 
-.navbar-info-left{
+.navbar-info-left {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,7 +15,7 @@
   flex: 1;
 }
 
-.navbar-info-right{
+.navbar-info-right {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,20 +24,20 @@
 }
 
 /* Symbol Navbar */
-.navbar-info-symbol{
+.navbar-info-symbol {
   display: flex;
   flex: 1;
   justify-content: flex-start;
 }
 
-.navbar-info-symbol-logo{
+.navbar-info-symbol-logo {
   width: 4.5em;
   height: 4.5em;
   background-color: lightcoral;
 }
 
 /* Title Navbar */
-.navbar-info-title{
+.navbar-info-title {
   display: flex;
   flex: 1;
   justify-content: flex-start;
@@ -49,7 +49,7 @@
 }
 
 /* Form Search Navbar */
-.navbar-info-search{
+.navbar-info-search {
   flex: 1;
 }
 
@@ -57,7 +57,8 @@
   display: flex;
   outline: 0;
   float: left;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -78,7 +79,7 @@
 
 .navbar-search-form > .search-form-textbox:focus {
   outline: 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .navbar-search-form > .search-form-button {
@@ -91,24 +92,23 @@
   text-align: center;
   line-height: 42px;
   border: 0;
-  color: #FFF;
-  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
   font: normal normal normal 14px/1;
   font-size: 16px;
   text-rendering: auto;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color .4s ease;
-  transition: background-color .4s ease;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
   -webkit-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
 }
 
-.navbar-search-form  > .search-form-button:hover {
+.navbar-search-form > .search-form-button:hover {
   background-color: rgba(0, 150, 136, 0.8);
 }
 
-
-.search-form-button  > .search-form-button-ico{
+.search-form-button > .search-form-button-ico {
   position: absolute;
   width: 42px;
   height: 42px;
@@ -120,33 +120,42 @@
 }
 
 /* User Inf & Control */
-.user-inf{
+.user-inf {
   display: flex;
   flex: 1;
   justify-content: center;
 }
 
-.user-control{
+.user-control {
   display: flex;
   flex: 3;
   justify-content: flex-end;
 }
 
-.user-ctrl-sear{
+.user-ctrl-sear {
   display: none;
 }
 
 /* Button User Req */
-.btn-user-req, .btn-user-chat, .btn-user-noti, .btn-user-sear{
+.btn-user-req,
+.btn-user-chat,
+.btn-user-noti,
+.btn-user-sear {
   background: transparent;
   border: none;
 }
 
-.btn-user-req:focus, .btn-user-chat:focus, .btn-user-noti:focus, .btn-user-sear:focus{
-  outline:0;
+.btn-user-req:focus,
+.btn-user-chat:focus,
+.btn-user-noti:focus,
+.btn-user-sear:focus {
+  outline: 0;
 }
 
-.btn-user-req img, .btn-user-chat img, .btn-user-noti img, .btn-user-sear img{
+.btn-user-req img,
+.btn-user-chat img,
+.btn-user-noti img,
+.btn-user-sear img {
   filter: brightness(0) invert(1);
   height: 45px;
   width: 45px;
@@ -154,12 +163,12 @@
 }
 
 /* User Inf Img */
-.user-inf-img{
+.user-inf-img {
   display: flex;
   align-items: center;
 }
 
-.user-inf-img img{
+.user-inf-img img {
   width: 42px;
   height: 42px;
   border-radius: 100%;
@@ -175,58 +184,87 @@
   height: 6px;
   border-radius: 100%;
   display: inline-block;
-  margin-top: -1em;
+  margin-top: -0.7em;
 }
 
 .icon-status.online {
   background-color: #32e4cd;
 }
 
+.btn-user-label {
+  position: absolute;
+  top: 1.5em;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-left: 2.5em;
+}
+
+.btn-user-label-bg1 {
+  background-color: orangered;
+}
+
+.btn-user-label-bg2 {
+  background-color: darkviolet;
+}
+
+.btn-user-label-bg3 {
+  background-color: darkred;
+}
 
 /* Reponsive css */
 @media only screen and (max-width: 1007px) and (min-width: 641px) {
-  .navbar-info-title{
+  .navbar-info-title {
     display: none;
   }
-  .navbar-info-search{
+  .navbar-info-search {
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
-  .navbar-search-form > .search-form-textbox{
+  .navbar-search-form > .search-form-textbox {
     width: 250px;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .navbar-info{
+  .navbar-info {
     overflow-x: hidden;
   }
-  .navbar-info-left{
+  .navbar-info-left {
     flex: none;
   }
-  .navbar-info-title{
+  .navbar-info-title {
     display: none;
   }
-  .navbar-info-search{
+  .navbar-info-search {
     display: none;
   }
-  .user-control{
+  .user-control {
     justify-content: center;
   }
-  .user-control div{
+  .user-control div {
     margin-left: 0.1em;
     margin-right: 0.1em;
   }
-  .user-ctrl-sear{
+  .user-ctrl-sear {
     display: flex;
   }
-  .user-inf{
+  .user-inf {
     width: 4.5em;
     height: 4.5em;
     background-color: lightcyan;
     flex: none;
   }
-  .btn-user-req img, .btn-user-chat img, .btn-user-noti img, .btn-user-sear img{
+  .btn-user-req img,
+  .btn-user-chat img,
+  .btn-user-noti img,
+  .btn-user-sear img {
     filter: brightness(0) invert(1);
     height: 30px;
     width: 30px;
